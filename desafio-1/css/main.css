@@ -55,3 +55,37 @@ section p.paragrafo {
     color: var(--dark-50);
     line-height: 32px;
 }
+
+@media (max-width: 768px) {
+    section span.data {
+        font-size: 14px;
+    }
+    section h1.titulo {
+        font-size: 20px;
+    }
+    section p.paragrafo {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    section span.data img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 375px) {
+    section span.data {
+        font-size: 12px;
+    }
+    section h1.titulo {
+        font-size: 20px;
+    }
+    section p.paragrafo {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    section span.data img {
+        width: 17.5px;
+        height: 15px;
+    }
+}
