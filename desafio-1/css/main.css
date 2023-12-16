@@ -38,6 +38,8 @@ section span.data {
 section span.data img {
     position: absolute;
     right: 0;
+    transition: fill 0.3s;
+    cursor: pointer;
 }
 
 section h1.titulo {

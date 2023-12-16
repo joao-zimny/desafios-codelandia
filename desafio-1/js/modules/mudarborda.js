@@ -5,7 +5,7 @@ export default function mudarBorda() {
             section.forEach((item) => {
                 item.classList.remove('ativo');
             });
-            item.target.classList.toggle('ativo');
+            item.currentTarget.classList.toggle('ativo');
         }
         
         section.forEach((section) => {

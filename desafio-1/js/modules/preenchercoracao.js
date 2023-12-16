@@ -3,13 +3,15 @@ export default function preencherCoracao() {
     
     if (icon.length) {
         function handleClick(item) {
-            console.log(item.target);
-            item.target.setAttribute('src', '/img/heart-filled.svg');
+            if (item.target.getAttribute('src') === '/img/heart.svg') {
+                item.target.setAttribute('src', '/img/heart-filled.svg');
+            } else {
+                item.target.setAttribute('src', '/img/heart.svg');
+            }
         }
         
         icon.forEach((item) => {
-            console.log(item);
             item.addEventListener('click', handleClick);
-        })
+        });
     }
 }
